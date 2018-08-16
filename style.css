@@ -5,7 +5,8 @@
 	font-size: 30px;
 	border-radius: 3px;
 	background-color: #2d2d2d;
-    color: white;
+	color: white;
+	overflow: hidden;
 }
 *::selection{
     color: #00d9ff;
