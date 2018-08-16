@@ -48,7 +48,6 @@ $( document ).ready(function() {
     }
     
     var rnd_int = get_rnd(compatible.length);
-
     $("mark.quote").text(compatible[rnd_int][0]);
     $("mark.author").text(compatible[rnd_int][1]);
     var inits = new TypeIt('.header, h1', { 
