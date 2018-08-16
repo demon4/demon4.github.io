@@ -58,7 +58,7 @@ $( document ).ready(function() {
     var inits = new TypeIt('.header, h1', { 
         cursor: false,
         lifeLike: true,
-        autoStart: false,
+        autoStart: true,
         speed: 100,
         startDelay: 500
     });
