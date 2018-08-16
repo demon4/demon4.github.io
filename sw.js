@@ -4,11 +4,14 @@ self.addEventListener('install', function(e) {
         return cache.addAll([
           '/',
           '/index.html',
-          '/index.html',
           '/style.css',
           '/script.js',
           '/precomp.js',
-          '/favicon.ico'
+          '/favicon.ico',
+          '/manifest.webmanifest',
+          '/images/favicon-16x16.png',
+          '/images/favicon-32x32.png',
+          '/images/favicon-96x96.png'
         ]);
       })
     );
