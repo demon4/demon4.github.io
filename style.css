@@ -37,8 +37,12 @@ a{
 	nav a {
 		display: block;
 		margin: 15px;
-		padding-left: 14px;
-		padding-right: 17px;
+	}
+	nav{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-right: 3px;
+		margin-left: -3px;
 	}
 }
 /* Portrait Tablets and Large Phones, 555px and up */
@@ -49,8 +53,6 @@ a{
 	nav a {
 		display: inline-block;
 		margin: 10px 3px 10px 3px;
-		padding-left: 14px;
-		padding-right: 17px;
 	}
 }
 /* Landscape tablets, 768px and up */
