@@ -1,0 +1,209 @@
+* {
+	margin: 3px;
+	padding: 10px;
+	font-family: 'East Sea Dokdo', cursive;
+	font-size: 30px;
+	border-radius: 3px;
+	background-color: #2d2d2d;
+    color: white;
+}
+*::selection{
+    color: #00d9ff;
+}
+
+body, html, .grid{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    
+    margin: 0px;
+    padding: 0px;
+}
+a{
+	padding: 4px;
+}
+#menu {
+	padding: 0;
+}
+
+
+/* Smart Phones, 555px and down */
+@media only screen and (min-width: 0px) {
+	.grid{
+		grid-template-areas:"title title""header header""sidebar sidebar""content content""footer footer";
+	}
+	nav a {
+		display: block;
+		margin: 15px;
+	}
+}
+/* Portrait Tablets and Large Phones, 555px and up */
+@media only screen and (min-width: 555px) {
+	.grid{
+		grid-template-areas:"title title""header header""sidebar sidebar""content content""footer footer";
+	}
+	nav a {
+		display: inline-block;
+		margin: 10px 3px 10px 3px;
+	}
+}
+/* Landscape tablets, 768px and up */
+@media only screen and (min-width: 768px) {
+	.grid{
+		grid-template-areas:"title title""header header""sidebar sidebar""content content""footer footer";
+	}
+	nav a {
+		display: inline-block;
+		margin: 10px 3px 10px 3px;
+	}
+	.navbar{
+		padding-left: 0px;
+	}
+}
+/* Laptops and Desktops, 921px and up*/
+@media only screen and (min-width: 921px) {
+	.grid{
+		display: grid;
+		grid-template-areas:"title title""header header""sidebar content""footer footer";
+	}
+	nav a {
+		display: block;
+		margin: 10px 3px 10px 3px;
+	}
+	.navbar{
+		padding-left: 0px;
+	}
+}
+/* Laptops and desktops, 1200px and up*/
+@media only screen and (min-width: 1200px) {
+	.grid{
+		display: grid;
+		grid-template-areas:"title title""header header""sidebar content""footer footer";
+	}
+	nav a {
+		display: block;
+		margin: 10px 3px 10px 3px;
+	}
+	.navbar{
+		padding-left: 9px;
+	}
+}
+h1{
+	font-size: 60px;
+	font-family: 'East Sea Dokdo', cursive;
+	font-weight: 200;
+	line-height: 40px;
+}
+ul{
+	list-style-type: none;
+}
+nav a {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'East Sea Dokdo', cursive;
+	font-weight: 400;
+	line-height: 30px;
+	position: relative;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 1px rgba(255, 177, 177, 0.3);
+	
+}
+nav{
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+nav a:hover,nav a:focus {
+    outline: none;
+}
+.navbar a {
+	padding: 5px 10px;
+}
+.navbar a::before,.navbar a::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #343536;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+.navbar a::after {
+	border-color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-7px) translateX(6px);
+	-moz-transform: translateY(-7px) translateX(6px);
+	transform: translateY(-7px) translateX(6px);
+}
+.navbar a:hover::before,.navbar a:focus::before {
+	opacity: 0;
+	-webkit-transform: translateY(5px) translateX(-5px);
+	-moz-transform: translateY(5px) translateX(-5px);
+	transform: translateY(5px) translateX(-5px);
+}
+.navbar a:hover::after,.navbar a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px) translateX(0px);
+	-moz-transform: translateY(0px) translateX(0px);
+	transform: translateY(0px) translateX(0px);
+}
+.ti-container, .ti-wrapper{
+	padding: 0px;
+}
+.quote{
+    background-color: #444444;
+    color: #8bc1ff;
+    padding: 0px;
+    margin: 0px;
+}
+.author{
+	background-color: #444444;
+    padding: 0px;
+    margin: 0px;
+}
+.title{
+    margin: 10px 15px 0px;
+    padding: 0;
+    background-color: #444444;
+	text-align: center;
+	font-size: 100px;
+	font-weight: bold;
+	line-height: 100px;
+	grid-area: title;
+}
+.header{
+    margin: 0px 15px 0px;
+    padding: 0;
+    padding-bottom: 10px;
+    background-color: #444444;
+    text-align: center;
+	grid-area: header;
+}
+.sidebar{
+	grid-area: sidebar;
+	grid-column: auto;
+	padding: 0;
+}
+.content{
+	grid-area: content;
+}
+.footer p, h1, .ti-wrapper, .ti-container{
+    color: white;
+    background-color: #444444;
+	grid-area: footer;
+}
+.footer{
+    margin: 0px 15px 10px;
+    color: white;
+    background-color: #444444;
+	grid-area: footer;
+}
