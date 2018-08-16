@@ -32,7 +32,7 @@ a{
 /* Smart Phones, 555px and down */
 @media only screen and (min-width: 0px) {
 	.grid{
-		grid-template-areas:"title title""header header""sidebar sidebar""content content""footer footer";
+		grid-template-areas:"title title""sidebar sidebar""content content""footer footer";
 	}
 	nav a {
 		display: block;
@@ -43,9 +43,6 @@ a{
 		margin-bottom: 0px;
 		margin-right: 3px;
 		margin-left: -3px;
-	}
-	.header{
-		display: none;
 	}
 }
 /* Portrait Tablets and Large Phones, 555px and up */
