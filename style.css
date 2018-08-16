@@ -44,6 +44,9 @@ a{
 		margin-right: 3px;
 		margin-left: -3px;
 	}
+	.header{
+		display: none;
+	}
 }
 /* Portrait Tablets and Large Phones, 555px and up */
 @media only screen and (min-width: 555px) {
