@@ -4,6 +4,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#2d2d2d",
+    "theme-color": "#2d2d2d",
     "description": "A cool little project",
     "icons": [{
         "src":"images/36.png",
