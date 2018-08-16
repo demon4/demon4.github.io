@@ -6,7 +6,7 @@
 	border-radius: 3px;
 	background-color: #2d2d2d;
 	color: white;
-	overflow: hidden;
+	
 }
 *::selection{
     color: #00d9ff;
@@ -14,7 +14,8 @@
 
 body, html, .grid{
     margin: 0px;
-    padding: 0px;
+	padding: 0px;
+	overflow: hidden;
 }
 nav{
     
