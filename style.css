@@ -37,8 +37,8 @@ a{
 	nav a {
 		display: block;
 		margin: 15px;
-		margin-left: -2px;
-		margin-right: 2px;
+		margin-left: 2px;
+		margin-right: -2px;
 	}
 }
 /* Portrait Tablets and Large Phones, 555px and up */
