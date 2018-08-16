@@ -48,7 +48,7 @@ $( document ).ready(function() {
     }
     
     var rnd_int = get_rnd(compatible.length);
-    if($( window).width() <= 530){
+    if($( window).width() >= 530){
         $("mark.quote").text(compatible[rnd_int][0]);
         $("mark.author").text(compatible[rnd_int][1]);
     }
