@@ -30,7 +30,7 @@ function get_rnd(max){
     return (Math.floor(Math.random() * max));
 }
 $( document ).ready(function() {
-    $( window ).width = $( document ).width();
+    window.innerWidth = window.outerWidth;
     var compatible = [];
     for(var i = 0; i < quotes.length; i++){ // try all quotes
         $("mark.quote").text(quotes[i][0]);
