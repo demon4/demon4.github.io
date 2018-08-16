@@ -46,6 +46,7 @@ $( document ).ready(function() {
     if($(".grid").width() - ($("mark.quote").width() + $("mark.author").width()) <= 100){ // checks if the screen is too small to fit a quote
         $(".header").empty();
     }
+    
     var rnd_int = get_rnd(compatible.length);
 
     $("mark.quote").text(compatible[rnd_int][0]);
