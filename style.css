@@ -44,6 +44,9 @@ a{
 		margin-right: 3px;
 		margin-left: -3px;
 	}
+	.header{
+		display: none;
+	}
 }
 /* Portrait Tablets and Large Phones, 555px and up */
 @media only screen and (min-width: 555px) {
@@ -53,6 +56,9 @@ a{
 	nav a {
 		display: inline-block;
 		margin: 10px 3px 10px 3px;
+	}
+	.header{
+		display: block;
 	}
 }
 /* Landscape tablets, 768px and up */
@@ -66,6 +72,9 @@ a{
 	}
 	.navbar{
 		padding-left: 0px;
+	}
+	.header{
+		display: block;
 	}
 }
 /* Laptops and Desktops, 921px and up*/
@@ -81,6 +90,9 @@ a{
 	.navbar{
 		padding-left: 9px;
 	}
+	.header{
+		display: block;
+	}
 }
 /* Laptops and desktops, 1200px and up*/
 @media only screen and (min-width: 1200px) {
@@ -94,6 +106,9 @@ a{
 	}
 	.navbar{
 		padding-left: 9px;
+	}
+	.header{
+		display: block;
 	}
 }
 h1{
