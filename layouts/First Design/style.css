@@ -27,6 +27,26 @@ a{
 #menu {
 	padding: 0;
 }
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #2d2d2d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #444444; 
+	border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(255,255,255,0.1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #888888; 
+}
 
 
 /* Smart Phones, 555px and down */

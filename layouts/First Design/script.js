@@ -25,6 +25,21 @@ var quotes = [
     ["The only source of knowledge is experience.","Albert Einstein"],
     ["If you can't explain it simply, you don't understand it well enough.","Albert Einstein"],
     ["Information is not knowledge.","Albert Einstein"],
+    ["Be yourself; everyone else is already taken.", "Oscar Wilde"],
+    ["There is nothing permanent except change", "Heraclitus"],
+    ["Ever tried. Ever Failed. No matter. Try Again. Fail again. Fail better", "Samuel Beckett"],
+    ["The only true wisdom is in knowing you know nothing", "Socrates"],
+    ["I know nothing except the fact of my ignorance", "Socrates"],
+    ["It is during our darkest moments that we must focus to see the light", "Aristotle"],
+    ["The roots of education are bitter, but the fruit is sweet", "Aristotle"], 
+    ["Quality is not an act, it is a habit", "Aristotle"],
+    ["Pleasure in the job puts perfection in the work", "Aristotle"],
+    ["There is no great genius without some touch of madness", "Aristotle"],
+    ["The worst form of inequality is to try to make unequal things equal", "Aristotle"],
+    ["At his best, man is the noblest of all animals", "Aristotle"],
+    ["The aim of the wise is not to secure pleasure, but to avoid pain", "Aristotle"],
+    ["Those that know, do. Those that understand, teach", "Aristotle"],
+    ["It hurts because it mattered", "John Green"]
 ];
 function get_rnd(max){
     return (Math.floor(Math.random() * max));
@@ -60,7 +75,7 @@ $( document ).ready(function() {
         lifeLike: true,
         autoStart: true,
         speed: 100,
-        startDelay: 500
+        startDelay: 100
     });
     
 });
