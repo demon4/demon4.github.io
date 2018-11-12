@@ -16,14 +16,12 @@ $(window).fancy_scroll({
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    if(scroll >= 1800){
-        $("#fixed").fadeIn();
+    if(scroll >= 1400){
+        $("#back2top").fadeIn();
     }else{
-        $("#fixed").fadeOut();
-
-    }
+        $("#back2top").fadeOut();
+    }   
 });
-
 var quotes = [
     ["It is the supreme art of the teacher to awaken joy in creative expression and knowledge.", "Albert Einstein"],
     ["We cannot solve our problems with the same thinking we used when we created them.", "Albert Einstein"],
@@ -54,7 +52,11 @@ var quotes = [
 function get_rnd(max){
     return (Math.floor(Math.random() * max));
 }
+
+
+
 $( document ).ready(function() {
+
     window.innerWidth = window.outerWidth;
     var compatible = [];
     for(var i = 0; i < quotes.length; i++){ // try all quotes
