@@ -14,6 +14,16 @@ $(window).fancy_scroll({
     bounceDistance: 10
 });
 
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if(scroll >= 1800){
+        $("#fixed").fadeIn();
+    }else{
+        $("#fixed").fadeOut();
+
+    }
+});
+
 var quotes = [
     ["It is the supreme art of the teacher to awaken joy in creative expression and knowledge.", "Albert Einstein"],
     ["We cannot solve our problems with the same thinking we used when we created them.", "Albert Einstein"],

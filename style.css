@@ -6,7 +6,6 @@
 	border-radius: 3px;
 	background-color: #2d2d2d;
 	color: white;
-	
 }
 *::selection{
     color: #00d9ff;
@@ -60,10 +59,10 @@ a{
 		margin: 15px;
 	}
 	nav{
-		margin-top: 0px;
-		margin-bottom: 0px;
+		margin: 0px;
+		/*margin-bottom: 0px;
 		margin-right: 3px;
-		margin-left: -3px;
+		margin-left: 4px;*/
 	}
 	.header{
 		display: none;
@@ -126,7 +125,7 @@ a{
 		margin: 10px 3px 10px 3px;
 	}
 	.navbar{
-		padding-left: 9px;
+		padding: 0px;
 	}
 	.header{
 		display: block;
@@ -175,6 +174,7 @@ nav a:hover,nav a:focus {
 	width: 100%;
 	height: 100%;
 	border: 3px solid #343536;
+	border-radius: 3px;
 	content: '';
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
@@ -243,6 +243,7 @@ nav a:hover,nav a:focus {
 	grid-area: sidebar;
 	grid-column: auto;
 	padding: 0;
+	margin:7px 0px 0px 13px;
 }
 .content{
 	grid-area: content;
@@ -257,4 +258,29 @@ nav a:hover,nav a:focus {
     color: white;
     background-color: #444444;
 	grid-area: footer;
+}
+.btn{
+	padding:4px;
+	appearance: button;
+	border: 2px solid white;
+	text-decoration: none;
+	color: #8bc1ff;
+}
+#fixed {
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	position:sticky;
+	width: 60px;
+	height: 40px;
+	bottom: 20px;
+	width: 100%;
+	display:none;
+}
+#center {
+	background-color: transparent;
+	text-align:center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
